@@ -1,3 +1,9 @@
+//Trishawna Ramdeen
+//620107141
+//Extra Feature- Transition of tiles
+
+
+
 window.onload=function(){
     var puzzlearea = $("#puzzlearea");
     var c = puzzlearea.children();
@@ -7,7 +13,7 @@ window.onload=function(){
     var b_Top= "100px";
     var b_Left= "100px";
     var b_Top, b_Left;
-    var moveCount = 0;
+    var count = 0;
 
     //var shuffle= document.getElementById("shufflebutton");
     //shuffle.onclick= 
@@ -24,10 +30,10 @@ window.onload=function(){
             c[i].style.left = x + "px";
 
             x+= 100;
-            moveCount+=1;
+            count+=1;
 
 
-            if(moveCount%4 ==0){
+            if(count%4 ==0){
             y+=100;
             x=0;
 
